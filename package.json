@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-user-manager": "^3.0.0",
+    "nodemon": "^2.0.6",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0"
+  },
+  "name": "swear.accountant",
+  "description": "A tracker for all the things. Count up, count down, easy access for counting or marking events",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.jkern.me:222/jkern/swear.accountant.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
