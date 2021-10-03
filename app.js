@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get("/restricted", [midd.loadUser, midd.loggindIn, midd.midd.authorized, (req, res, next)=>{res.send("granted")}])
+app.get("/restricted", [midd.loadUser, midd.loggedIn, midd.authorized, (req, res, next)=>{res.send("granted")}])
 
 // Bind the routes under [apiMountPoint] (default: ***/api/users***):
 userManager.listen(app, apiMountPoint = '/api/users', customRoutes = {});
